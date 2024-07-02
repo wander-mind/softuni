@@ -16,7 +16,7 @@ Clone the repository:
 ```bash
 $ git clone https://github.com/wander-mind/softuni.git # Clone the repo
 
-$ cd softuni-projects # Go to the directory
+$ cd softuni # Go to the directory
 ```
 
 Check out the individual project folders to explore the source code and documentation for each course.
