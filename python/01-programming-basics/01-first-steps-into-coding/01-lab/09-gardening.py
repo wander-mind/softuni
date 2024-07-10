@@ -43,5 +43,7 @@ discount = price * 0.18
 total = price - discount
 
 # Output:
-print(f"The final price is: {total} lv.")
-print(f"The discount is: {discount} lv.")
+print(f"The final price is: {total:.2f} lv.")
+print(f"The discount is: {discount:.2f} lv.")
+
+# In both outputs we round the prices to their second decimal.
