@@ -46,9 +46,24 @@
 #
 
 # Input
-
+B = float(input())          # Budget
+N = int(input())            # Videocards
+M = int(input())            # Proccessors
+P = int(input())            # RAM
 
 # Calculation
+vp = N * 250                # Videocards price
+pp = M * vp * 0.35          # Proccessor price
+rp = P * vp * 0.1           # RAM price
+tp = vp + pp + rp           # Total price
 
+if N > M:
+    tp *= 0.85              # 15% off total price
 
 # Output
+if B >= tp:
+    ml = B - tp             # Money left
+    print(f"You have {ml:.2f} leva left!")
+else:
+    mn = tp - B             # Money needed
+    print(f"Not enough money! You need {mn:.2f} leva more!")
