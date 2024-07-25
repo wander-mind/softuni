@@ -51,9 +51,32 @@
 # Input
 bud = int(input())              # Budget
 s = input()                     # Season
-nf - int(input())               # Number of fishermen
+nf = int(input())               # Number of fishermen
 
 # Calculation
+srp = {                         # Ship rental prices
+    "Spring": 3000,
+    "Summer": 4200,
+    "Autumn": 4200,
+    "Winter": 2600
+    }
 
+sp = srp[s]                     # Ship price (based on the season)
+
+if nf <= 6:
+    sp *= 0.9                   # Ship price after 10% discount
+elif 6 < nf < 12:
+    sp *= 0.85                  # Ship price after 15% discount
+else:
+    sp *= 0.75                  # Ship price after 25% discount
+
+if nf % 2 == 0 and s != 'Autumn':
+    sp *= 0.95                  # Extra 5% discount if 'fn' are even num
 
 # Output
+if bud >= sp:
+    ml = bud - sp               # Money left if budget is enough
+    print(f"Yes! You have {ml:.2f} leva left.")
+else:
+    mn = sp - bud               # Money needed in budget is NOT enough
+    print(f"Not enough money! You need {mn:.2f} leva.")
