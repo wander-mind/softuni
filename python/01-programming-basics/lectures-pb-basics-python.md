@@ -18,13 +18,9 @@
 ########################################################################
 ```
 
-# **01. Programming basics**
-
-## 01. First steps into coding
-
 If you want to learn anything about python from my lecture notes, or you need to refresh some of your knowlege, you have to already know some python, because in these notes I will be going into detail only for the things I need, and may glimpse over or even skip some esentials. Thank you!
 
-### 00. Basic commands
+# 01. Basic commands
 
 - **print({content})**
     Prints the content on the console.
@@ -54,7 +50,7 @@ print(f"{hours % 24:2d}:{minutes:02d}") # 11:59
 - **Store time/hours as a string** ```formatted-time = f"{hours % 24:02d}:{minutes % 60:02d}" ; print(formatted-time)```
     We have stored the formated time as a string, for e.g. *9:01*, and we can use it later, in this example - to print it.
 
-### 01. Escape sequences
+## 01. Escape sequences
 
 **I will add extra backslashes to escape the escape sequences in MarkDown too**. If this document is converted from *.md* to *.pdf*, or *.html* - you won't see them.
 
@@ -82,4 +78,4 @@ print(f"{hours % 24:2d}:{minutes:02d}") # 11:59
 * Hex value - A backslash followed by an 'x' and a hex number.
     ```txt = "\x50\x79\x74\x68\x6f\x6e" # Python```
 
-### 02. Variables
+## 02. Variables
