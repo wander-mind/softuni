@@ -56,8 +56,7 @@ print(f"{hours % 24:2d}:{minutes:02d}") # 11:59
 
 ### 01. Escape sequences
 
-**I will add extra backslashes to escape the escape sequences in MarkDown too.**
-If this document is converted from *.md* to *.pdf*, or *.html* - you won't see them.
+**I will add extra backslashes to escape the escape sequences in MarkDown too**. If this document is converted from *.md* to *.pdf*, or *.html* - you won't see them.
 
 | **Escape Sequence**   | **Represents**    |
 |-----------------------|-------------------|
