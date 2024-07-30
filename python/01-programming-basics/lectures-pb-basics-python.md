@@ -70,7 +70,7 @@ print(f"{hours % 24:2d}:{minutes:02d}") # 11:59
 |           \\ooo       |   Octal value     |
 |           \\xhh       |   Hex value       |
 
-* Carriege return - unlike *New line*, splits 1 output into 2 new outputs (on a new line each ofcourse).
+* Carriege return - unlike *New line*, splits 1 output into 2 new outputs (each on a new line of course).
 
 * Form feed - Useless in these days, used for old terminals, and printes.
 
