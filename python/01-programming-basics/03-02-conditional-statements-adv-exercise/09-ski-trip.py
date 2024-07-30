@@ -57,9 +57,38 @@ tr = input()                        # Type of room
 r = input()                         # Rating
 
 # Calculation
+n = d -1                            # Nights = days - 1
 
+if tr == 'room for one person':
+    rp = n * 18                     # Room price
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
+elif tr == 'apartment':
+    rp = n * 25
+
+    if 10 > d:
+        rp *= 0.7                   # Discount 30%
+    elif 10 <= d <= 15:
+        rp *= 0.65                  # Discount 35%
+    elif d > 15:
+        rp *= 0.5                   # Discount 50%
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
+elif tr == 'president apartment':
+    rp = n * 35
+
+    if 10 > d:
+        rp *= 0.9                   # Discount 10%
+    elif 10 <= d <= 15:
+        rp *= 0.85                  # Discount 15%
+    elif d > 15:
+        rp *= 0.8                   # Discount 20%
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
+if r == "positive":
+    rp *= 0.75                      # Discount 25% extra
+elif r == "negative":
+    rp *= 1.1                       # 10% extra charge
 
 # Output
-
-
-# NOT COMPLETE!!!!
+print(f"{rp:.2f}")
