@@ -12,7 +12,7 @@
 #██║ ╚═╝ ██║██║██║ ╚████║██████╔╝
 #╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═════╝      Site: wandermind.xyz
 
-# ** Stream of numbers **
+# ** Stream of characters from a string **
 
 # Input
 text = input()              # The text we will print letter by letter
