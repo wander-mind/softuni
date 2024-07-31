@@ -108,4 +108,106 @@ print(round(35.700000, 4))          # prints 35.7
 print(f"{35.700000:.4f}")           # prints 35.7000
 ```
 
-##
+### Minumum and Maximum values between 2 numbers
+
+```python
+a = 5
+b = 7
+x = min(a, b)   # 5         x will get the lower of the 2 valies, in this case 5 < 7, so 5
+y = max(a, b)   # 7         y will get the higher of the 2 values, 7 > 5
+```
+
+## Logical operators **and**, **or**, **not**, & **in**
+
+Operators that combine or exclude conditions.
+
+- and - checks true for both conditions.
+- or - checks if eather/or one or the other condition is true, or both.
+- not - checks in the proceeding conditions is false/invalid.
+- in - checks if variable is equal to one of the items in an array.
+
+```python
+a = int(input())
+
+if a > 5 and a < 10 and a % 2 == 0: ....
+if 5 < a < 10 and a % 2 == 0 ...        # same as above
+
+if a > 5:               # \
+    if a < 10:          # => same as above 2
+        if a % 2 ==0:   # /
+
+if a == 4 + 1 or a == 2 + 3, or a == 90 // 7: ... # True if any one statement is true
+
+valid = number > 10 and number % 2 == 0 # valid becomes a bool variable, true or false
+if not valid:
+    print("Invalid!")
+
+#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~#~
+animal = 'dog'
+
+if animal in ['cat', 'dog', 'human']
+    print('Mammal')
+```
+
+## 03. **for** loops
+
+Used to repeat the same commands a sertaint number of times.
+
+```python
+for i in range(1, 13):      # iterates from 1 (inclusively) to 12 (inclusively)
+    print(i)                # prints 1/n2/n3/n...12
+
+for i in range(4, 100, 4):  # iterates from 4 to 100, adding 4 to i every time
+    print(i)                # prints 4, 8, 12...96
+
+for i in range(100, 4, -4): # iterates from 100 to 4, subtracting 4 from i every time
+    print(i)                # prints 100, 96, 92...8
+```
+
+## 04. Strings
+
+```python
+# We can get the lenght of text:
+text = 'Wander-Mind'
+length = len(text)          # 11, counts the number of characters in the string
+
+# We can get a specific simbol/char from text by index
+letter = text[7]            # M, counts from 0, 1, 2, 3....
+                            # 0 1 2 3 4 5 6|7|8 9 10
+                            # W a n d e r -|M|i n d
+```
+
+- Example program:
+
+Write a program that reads text/string, & prints every symbol/char on a new line.
+
+```python
+word = input()
+
+for i in range(0, len(word)):   # Begin from letter 1 (0), and end at last character
+    print(word[i])              # Prints every letter, one at a time on a new line
+```
+
+- Example program:
+
+Write a program that reads a word/text/string, & prints the sum for a score if a = 1, e = 2, i = 3, o = 4, u = 5. For example: 'wander-mind' -> 6 (a+e+i = 1+2+3 = 6)
+
+```python
+word = input()
+sum = 0                     # We have to declare 'sum' before hand, because
+                            # we may not have any of those letters, and we
+                            # can't print a non-declared variable.
+for i in range(0, len(word))
+    if text[i] == "a":
+        sum += 1
+    if text[i] == "e":
+        sum += 2
+    if text[i] == "i":
+        sum += 3
+    if text[i] == "o":
+        sum += 4
+    if text[i] == "u":
+        sum += 5
+
+print(sum)
+```
