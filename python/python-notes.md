@@ -117,6 +117,27 @@ x = min(a, b)   # 5         x will get the lower of the 2 valies, in this case 5
 y = max(a, b)   # 7         y will get the higher of the 2 values, 7 > 5
 ```
 
+### Min & Max system size
+
+```python
+import sys
+
+smallest = sys.maximize     # we will be compairin bumbers to this max value, the smallest gets recorded as the variables last value
+biggest = -sys.maximize     # same thing, in reverse
+n - int(input())            # how many times to prompt for number input
+
+for i in range(0, n):
+    num = int(input())
+
+    if num < smallest:
+        smallest = num
+    if num > biggest:
+        biggest = num
+
+print(f"Max number: {biggest}")
+print(f"Min number: {smallest}")
+```
+
 ## Logical operators **and**, **or**, **not**, & **in**
 
 Operators that combine or exclude conditions.
@@ -177,7 +198,7 @@ letter = text[7]            # M, counts from 0, 1, 2, 3....
                             # W a n d e r -|M|i n d
 ```
 
-- Example program:
+### Example program 1:
 
 Write a program that reads text/string, & prints every symbol/char on a new line.
 
@@ -188,9 +209,11 @@ for i in range(0, len(word)):   # Begin from letter 1 (0), and end at last chara
     print(word[i])              # Prints every letter, one at a time on a new line
 ```
 
-- Example program:
+### Example program 2:
 
 Write a program that reads a word/text/string, & prints the sum for a score if a = 1, e = 2, i = 3, o = 4, u = 5. For example: 'wander-mind' -> 6 (a+e+i = 1+2+3 = 6)
+
+- Method 1:
 
 ```python
 word = input()
@@ -208,6 +231,31 @@ for i in range(0, len(word))
         sum += 4
     if text[i] == "u":
         sum += 5
+
+print(sum)
+```
+
+- Method 2:
+```python
+word = input()
+
+vowel_values = {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5}
+sum = sum(vowel_values[char] for char in word if char in vowel_values)
+
+print(sum)
+```
+
+- Method 3:
+
+```python
+word = input()
+
+vowel_values = {'a': 1, 'e': 2, 'i': 3, 'o': 4, 'u': 5}
+sum = 0
+
+for char in word:
+    if char in vowel_values:
+        sum += vowel_values[char]
 
 print(sum)
 ```
