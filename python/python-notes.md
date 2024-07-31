@@ -78,4 +78,34 @@ print(f"{hours % 24:2d}:{minutes:02d}") # 11:59
 * Hex value - A backslash followed by an 'x' and a hex number.
     ```txt = "\x50\x79\x74\x68\x6f\x6e" # Python```
 
-## 02. Variables
+## 02. Number Formatting
+
+### Round UP/DOWN numbers
+
+```python
+up = math.ceil(23.45)       # 24
+down = math.floor(23.45)    # 23
+```
+
+### Absolute number value
+
+```python
+example1 = abs(-69)         # 69
+example2 = abs(69)          # 69
+```
+
+### Rounding decimal number values
+
+```python
+# Rounding to the 3rd decimal point
+rounded = round(12.3456789, 3)      # 12.346
+
+# Formatting to the 3rd decimal point
+print(f"{123.456789:.3f}")          # prints 123.457
+
+# !! DIFERENCE BETWEEN ROUNDING & FORMATTING
+print(round(35.700000, 4))          # prints 35.7
+print(f"{35.700000:.4f}")           # prints 35.7000
+```
+
+##
