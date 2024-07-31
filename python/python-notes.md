@@ -122,8 +122,8 @@ y = max(a, b)   # 7         y will get the higher of the 2 values, 7 > 5
 ```python
 import sys
 
-smallest = sys.maximize     # we will be compairin bumbers to this max value, the smallest gets recorded as the variables last value
-biggest = -sys.maximize     # same thing, in reverse
+smallest = sys.maxsize      # we will be compairin bumbers to this max value, the smallest gets recorded as the variables last value
+biggest = -sys.maxsize      # same thing, in reverse
 n - int(input())            # how many times to prompt for number input
 
 for i in range(0, n):
