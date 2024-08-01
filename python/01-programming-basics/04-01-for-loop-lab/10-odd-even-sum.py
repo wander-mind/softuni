@@ -27,7 +27,7 @@ for i in range(0, n):
     else:
         total2 += int(input())
 
-    counter ++
+    counter += 1
 
 # Output
 if total1 == total2:
