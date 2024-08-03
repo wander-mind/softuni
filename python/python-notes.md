@@ -50,6 +50,18 @@ print(f"{hours % 24:2d}:{minutes:02d}") # 11:59
 - **Store time/hours as a string** ```formatted-time = f"{hours % 24:02d}:{minutes % 60:02d}" ; print(formatted-time)```
     We have stored the formated time as a string, for e.g. *9:01*, and we can use it later, in this example - to print it.
 
+- **Print characters using numbers** ```for i in range(0, 256): print(chr(i))```
+    `chr(num)` is a built-in function that takes an *integer* and returns the corresponding character from the Unicode character set.
+        Example:
+```python
+print(chr(65))      # Output: 'A'
+print(chr(97))      # Output: 'a'
+print(chr(8364))    # Output: '€'
+print(chr(48))      # Output: '0'
+print(chr(122))     # Output: 'z'
+print(chr(9829))    # Output: '♥'
+```
+
 ## 01. Escape sequences
 
 **I will add extra backslashes to escape the escape sequences in MarkDown too**. If this document is converted from *.md* to *.pdf*, or *.html* - you won't see them.
