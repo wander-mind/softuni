@@ -273,3 +273,22 @@ for char in word:
 
 print(sum)
 ```
+
+## 05. While loops
+
+Example:
+```python
+a = 5
+while a <= 10:
+    print("a = " + str(a))  # Prints a = 5, a = 6, a = 7, a = 8, a = 9, a = 10
+    a += 1
+```
+
+### End while loop with **break**
+
+```python
+while True:         # Endless while loop
+    print("loop")
+    if ...:
+        break       # Breaks the endless while loop
+```
